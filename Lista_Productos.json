@@ -1,0 +1,74 @@
+ [
+    {
+        "id": 1,
+        "nombre": "Aeonium Arboreum",
+        "caracteristica": "Exterior",
+        "descripcion": "asdasd",
+        "precio": 500,
+        "imagen": "../imagenes/productos/aeonium-arboreum.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Haworthii Fasciata",
+        "caracteristica": "Exterior",
+        "descripcion": "asdasd",
+        "precio": 1200,
+        "imagen": "../imagenes/productos/haworthia-fasciata.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Aloe Polyphylla",
+        "caracteristica": "Exterior",
+        "descripcion": "asdasd",
+        "precio": 1500,
+        "imagen": "../imagenes/productos/aloe-polyphylla.jfif"
+    },
+    {
+        "id": 4,
+        "nombre": "Aloe Ferox",
+        "caracteristica": "Interior",
+        "descripcion": "asdasd",
+        "precio": 1000,
+        "imagen": "../imagenes/productos/aloe-ferox.jpg"
+    },
+    {
+        "id":5 ,
+        "nombre": "Aloe Vera",
+        "caracteristica": "Exterior",
+        "descripcion": "asdasd",
+        "precio": 12,
+        "imagen": "../imagenes/productos/aloe-vera.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Suculenta Echeveria",
+        "caracteristica": "Exterior",
+        "descripcion": "asdasd",
+        "precio": 12,
+        "imagen": "../imagenes/productos/echeveria.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Cereus Forbesii",
+        "caracteristica": "Exterior",
+        "descripcion": "asdasd",
+        "precio": 1250,
+        "imagen": "../imagenes/productos/cereus-forbesii.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Cola de burro",
+        "caracteristica": "Exterior",
+        "descripcion": "asdasd",
+        "precio": 12,
+        "imagen": "../imagenes/productos/cola-de-burro.webp"
+    },
+    {
+        "id": 9,
+        "nombre": "Crassula arborescens",
+        "caracteristica": "Exterior",
+        "descripcion": "asdasd",
+        "precio": 12,
+        "imagen": "../imagenes/productos/crassula-arborescens.jpg"
+    }
+]
