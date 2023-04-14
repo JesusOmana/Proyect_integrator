@@ -1,10 +1,12 @@
 const form = document.getElementById('enviar_form');
-form.addEventListener('submit', (event) => {
+
+form.addEventListener('click', (event) => {
         event.preventDefault();
-        Swal.fire({
+        
+        Swal.fire ({
             position: 'center',
             icon: 'success',
-            title: 'ahora eres suculento',
+            title: 'Ahora eres suculento',
             showConfirmButton: false,
             timer: 1500
           })

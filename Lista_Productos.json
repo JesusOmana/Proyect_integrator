@@ -62,13 +62,6 @@
         "descripcion": "asdasd",
         "precio": 12,
         "imagen": "../imagenes/productos/cola-de-burro.webp"
-    },
-    {
-        "id": 9,
-        "nombre": "Crassula arborescens",
-        "caracteristica": "Exterior",
-        "descripcion": "asdasd",
-        "precio": 12,
-        "imagen": "../imagenes/productos/crassula-arborescens.jpg"
     }
-]
+ ]
+   

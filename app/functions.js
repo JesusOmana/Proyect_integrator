@@ -1,11 +1,12 @@
 export const ListaDeProductos = async () => {
   try {
     let response = await fetch('../Lista_Productos.json')
+    // console.log('response: ', response)
     if (response.ok !== true) {
       new Error('error en la solicitud')
     }
     let data = await response.json()
-    console.log('data: ', data);
+    // console.log('data: ', data[0]);
     return data
   } catch (error) {
     alert(error)
@@ -62,7 +63,7 @@ export const CrearTarjetas = (array, container) => {
                                           <div class="btn-group">
                                               <button  class="btn btn-primary btn-detalles" id="${item.id}">Detalles</button>
                                           </div>
-                                              <button class="btn btn-success btn-agregar" id"${item.id}">Agregar</button>
+                                              <button class="btn btn-success btn-agregar" id="${item.id}">Agregar</button>
                                           </div>
                                       </div> 
                                   </div>
@@ -90,7 +91,7 @@ export const DetalleProducto = (array) =>{
             img: FiltroProducto.imagen,
             id: FiltroProducto.id,
           }
-
+          console.log('infoproductos ',InfoProducto);
 
           localStorage.setItem('InfoProducto', JSON.stringify(InfoProducto))
           console.log(InfoProducto);
@@ -204,34 +205,36 @@ export const addEventDetail = () => {
 export function agregarAlCarrito(array){
     // TODO arreglar error en el carrito
     let arrayCarrito;
-    // console.log('array carrito: 1', array);
-    let botones = document.querySelectorAll('.btn')
+    console.log('array carrito: 1', array);
+    let botones = document.querySelectorAll('.btn-agregar')
     // console.log('botones: ', botones);
     botones.forEach(function(boton){
       boton.addEventListener('click', function(evento){
-        // console.dir(evento)
+        console.log(evento)
         // console.dir(evento.target)
         // console.dir(evento.target.parentNode)
-        alert('agregado al carrito')
-      let id = evento.target.id
+        // alert('agregado al carrito')
+        
+        let id = evento.target.attributes[1].value
+        let FiltroProducto = array.find((el) => el.id == id)
       console.log('id: ', id);
        
-      let productoFilter = array.find( (elemento) =>  elemento.id == id  )
-      console.log('filtro de productos', productoFilter);
-      if (productoFilter !== undefined) {
+      // let FiltroProducto = array.find( (elemento) =>  elemento.id == id  )
+      console.log('filtro de productos', FiltroProducto);
+      if (FiltroProducto !== undefined) {
             arrayCarrito =  JSON.parse( localStorage.getItem('carrito')) || []
             console.log('arraycarrito dps de filtro', arrayCarrito);
-            let index = arrayCarrito.findIndex( (el) => el.id == productoFilter.id)
-            // console.log(productoFilter.id);
+            let index = arrayCarrito.findIndex( (el) => el.id == FiltroProducto.id)
+            // console.log(FiltroProducto.id);
             // console.log(arrayCarrito[0].id);
             if (index !== -1) {
                 arrayCarrito[index].cantidad += 1
                 localStorage.setItem('carrito', JSON.stringify(arrayCarrito))
             }else{
-                productoFilter.cantidad = 1
-                arrayCarrito.push(productoFilter)
-                localStorage.setItem('carrito', JSON.stringify(arrayCarrito))
-                console.log(arrayCarrito);
+                FiltroProducto.cantidad = 1
+                arrayCarrito.push(FiltroProducto)
+                localStorage.setItem('carrito: ', JSON.stringify(arrayCarrito))
+                console.log('stringigy', arrayCarrito);
             }
            
       }
