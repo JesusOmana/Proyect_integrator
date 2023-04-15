@@ -95,7 +95,7 @@ export const DetalleProducto = (array) =>{
 
           localStorage.setItem('InfoProducto', JSON.stringify(InfoProducto))
           console.log(InfoProducto);
-          window.location = './producto2.html'
+          window.location = './pageproduct.html'
             
             // console.log('Filtraso: ', FiltroProducto.precio);
             //<-- Inyecta la pagina de producto pero no funciona el boton "Atras" porque no existe pagina anterior siempre es la misma -->
