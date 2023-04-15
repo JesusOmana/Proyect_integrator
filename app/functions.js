@@ -154,6 +154,13 @@ export const DetalleProducto = (array) =>{
           }
           
           localStorage.setItem('InfoProducto', JSON.stringify(InfoProducto))
+          console.log(InfoProducto);
+          window.location = './pageproduct.html'
+          })
+  }
+
+}
+
           window.location = './pageproduct.html'
           
           
