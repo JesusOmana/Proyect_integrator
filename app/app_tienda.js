@@ -9,14 +9,14 @@ CrearTarjetas(Productos, containerAllProduct)
 DetalleProducto(Productos)
 agregarAlCarrito(Productos)
 
+
+
 // document.addEventListener('DOMContentLoaded', async () => {
 //     let response = await ListaDeProductos()
 //     console.log(Productos);
     
 // })
 // console.log(containerAllProduct);
-
-
 
 // document.querySelector('#containerAllProduct').innerHTML='prueba'
 
